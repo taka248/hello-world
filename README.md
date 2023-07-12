@@ -4,4 +4,4 @@
 git/github 演習
 
 gitチュートリアル
-https://github.com/taka248/hello-world/blob/main/README.md
+https://github.com/taka248/hello-world/blob/main/git-tutorial.md
