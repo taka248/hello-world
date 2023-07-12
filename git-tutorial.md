@@ -24,12 +24,12 @@
 git flowでは、'main'ブランチと'develop'ブランチとを作成し、'develop'ブランチ上で開発する
 
  - ### 'main'ブランチ
- 　- このブランチで開発は行いません。main ブランチの最新版がプロダクトとしてユーザにリリースされます。
+   - このブランチで開発は行いません。main ブランチの最新版がプロダクトとしてユーザにリリースされます。
  - ### 'develop'ブランチ
- 　- main から develop へブランチを切ります。develop で開発を行い、main はリリース時にコミットされます。main の commit にはリリースごとにタグを打ちます
+   - main から develop へブランチを切ります。develop で開発を行い、main はリリース時にコミットされます。main の commit にはリリースごとにタグを打ちます
  - ### 'feature'ブランチ
- 　- develop から feature へブランチを切ります。複数人で develop で開発するときに使います。1 機能ごとに develop からブランチを切り、1機能の開発が終われば develop へ merge します。
+   - develop から feature へブランチを切ります。複数人で develop で開発するときに使います。1 機能ごとに develop からブランチを切り、1機能の開発が終われば develop へ merge します。
  - ### 'release'ブランチ
- 　- develop から main へ merge するための準備をするブランチです。main へ commit することで実際にプロダクトとして使われるようになります。
+   - develop から main へ merge するための準備をするブランチです。main へ commit することで実際にプロダクトとして使われるようになります。
  - ### 'hotfix'ブランチ
- 　- main から hotfix へブランチを切ります。本番環境で発生したバグのうち緊急性の高いものを修正するブランチです。修正が完了したら main と developにマージします。
+   - main から hotfix へブランチを切ります。本番環境で発生したバグのうち緊急性の高いものを修正するブランチです。修正が完了したら main と developにマージします。
