@@ -18,3 +18,18 @@
 - git branch "branch-name"  新規ブランチの作成
 - git checkout "branch-name"  指定されたブランチに切り替え作業ディレクトリを更新
 - git merge "branch-name"  指定されたブランチの履歴を現在のブランチに統合
+
+## git flowについて
+
+git flowでは、'main'ブランチと'develop'ブランチとを作成し、'develop'ブランチ上で開発する
+
+ - ### 'main'ブランチ
+ 　- このブランチで開発は行いません。main ブランチの最新版がプロダクトとしてユーザにリリースされます。
+ - ### 'develop'ブランチ
+ 　- main から develop へブランチを切ります。develop で開発を行い、main はリリース時にコミットされます。main の commit にはリリースごとにタグを打ちます
+ - ### 'feature'ブランチ
+ 　- develop から feature へブランチを切ります。複数人で develop で開発するときに使います。1 機能ごとに develop からブランチを切り、1機能の開発が終われば develop へ merge します。
+ - ### 'release'ブランチ
+ 　- develop から main へ merge するための準備をするブランチです。main へ commit することで実際にプロダクトとして使われるようになります。
+ - ### 'hotfix'ブランチ
+ 　- main から hotfix へブランチを切ります。本番環境で発生したバグのうち緊急性の高いものを修正するブランチです。修正が完了したら main と developにマージします。
